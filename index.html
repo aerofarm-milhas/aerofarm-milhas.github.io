@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aero Farm · Passagens com milhas</title>
+<meta name="description" content="Passagens aéreas emitidas com milhas por menos que o preço do site da companhia. Peça sua cotação no WhatsApp.">
+<style>
+:root{--fundo:#F2F3F5;--card:#fff;--borda:#D0D4DA;--texto:#1F2328;--suave:#5F6873;--grafite:#2F3A45;--grafite2:#4A5663;
+--verde:#1E6B45;--verde-fundo:#E3F1E8}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--fundo);color:var(--texto);
+line-height:1.5}
+.topo{background:linear-gradient(160deg,var(--grafite),var(--grafite2));color:#fff;padding:40px 20px 48px}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+.topo .wrap{padding:0}
+.marca{font-weight:700;letter-spacing:.08em;font-size:.8rem;color:#C9CED6}
+h1{font-size:2rem;line-height:1.15;margin:14px 0 10px}
+.topo p{margin:0 0 22px;color:#DDE1E6;font-size:1.05rem}
+.botoes{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:14px 22px;border-radius:12px;font-weight:700;text-decoration:none;text-align:center;
+flex:1 1 200px}
+.btn.claro{background:#fff;color:var(--grafite)}
+.btn.verde{background:#8FD3AE;color:#173A2A}
+.btn.escuro{background:var(--grafite);color:#fff}
+section{padding:36px 0 8px}
+h2{font-size:1.4rem;margin:0 0 16px}
+.passos{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.passo,.ex{background:var(--card);border:1px solid var(--borda);border-radius:16px;padding:18px}
+.num{display:inline-block;width:30px;height:30px;border-radius:50%;background:var(--grafite);color:#fff;
+text-align:center;line-height:30px;font-weight:700;margin-bottom:8px}
+.passo b{display:block;margin-bottom:4px}
+.passo span,.sub{color:var(--suave)}
+.exs{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.rota{font-weight:700;font-size:1.1rem}
+.mes{color:var(--suave);font-size:.9rem}
+.precos{margin-top:10px}
+.de{color:var(--suave);text-decoration:line-through}
+.por{font-size:1.5rem;font-weight:800;color:var(--verde)}
+.eco{display:inline-block;margin-top:6px;background:var(--verde-fundo);color:var(--verde);border-radius:8px;
+padding:2px 8px;font-size:.85rem;font-weight:700}
+details{background:var(--card);border:1px solid var(--borda);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:10px 0 0;color:var(--suave)}
+.final{text-align:center;padding:36px 0 48px}
+.final .botoes{max-width:520px;margin:0 auto}
+footer{text-align:center;color:var(--suave);font-size:.8rem;padding:0 20px 32px}
+@media (min-width:700px){h1{font-size:2.6rem}.topo{padding:64px 20px 72px}}
+</style>
+</head>
+<body>
+<header class="topo"><div class="wrap">
+<div class="marca">AERO FARM · PASSAGENS COM MILHAS</div>
+<h1>Passagem aérea por menos que o preço do site da companhia</h1>
+<p>Emitimos sua passagem com milhas, no seu nome. Você paga em reais e não precisa ter milhas.</p>
+<div class="botoes"><a class="btn claro" href="https://aerofarm.streamlit.app/pedido?origem=site">Pedir cotação</a>
+<a class="btn verde" href="https://aerofarm.streamlit.app/pedido?origem=site">Falar no WhatsApp</a></div>
+</div></header>
+<main class="wrap">
+<section><h2>Como funciona</h2><div class="passos">
+<div class="passo"><div class="num">1</div><b>Você pede</b><span>Diz a rota, as datas e quantas pessoas. Leva 1 minuto.</span></div>
+<div class="passo"><div class="num">2</div><b>A gente cota</b><span>Procuramos as datas com menos milhas e mandamos o preço final no WhatsApp, com taxas.</span></div>
+<div class="passo"><div class="num">3</div><b>Você voa</b><span>Emitimos no seu nome, você confere o localizador no site da companhia e embarca.</span></div>
+</div></section>
+<section><h2>Quanto você economiza</h2>
+<p class="sub">Exemplos reais encontrados pelo nosso radar em 28/10/2026, comparados ao preço normal
+da mesma rota. Os valores mudam todos os dias.</p>
+<div class="exs"><div class="ex"><div class="rota">Fortaleza → Buenos Aires</div>
+<div class="mes">Novembro · só ida, por pessoa</div>
+<div class="precos"><span class="de">R$ 4.907</span> <span class="por">R$ 1.262</span></div>
+<div class="eco">economia de 74%</div></div><div class="ex"><div class="rota">Rio de Janeiro → Roma</div>
+<div class="mes">Junho · só ida, por pessoa</div>
+<div class="precos"><span class="de">R$ 6.651</span> <span class="por">R$ 2.211</span></div>
+<div class="eco">economia de 67%</div></div><div class="ex"><div class="rota">Rio de Janeiro → Paris</div>
+<div class="mes">Junho · só ida, por pessoa</div>
+<div class="precos"><span class="de">R$ 5.961</span> <span class="por">R$ 2.271</span></div>
+<div class="eco">economia de 62%</div></div><div class="ex"><div class="rota">São Paulo → Lisboa</div>
+<div class="mes">Julho · só ida, por pessoa</div>
+<div class="precos"><span class="de">R$ 5.638</span> <span class="por">R$ 2.278</span></div>
+<div class="eco">economia de 60%</div></div></div></section>
+<section><h2>Perguntas frequentes</h2><details><summary>É seguro? A passagem é minha mesmo?</summary><p>Sim. A passagem é emitida no seu nome, direto na companhia aérea, com localizador que você confere no site da própria companhia antes de pagar o restante.</p></details><details><summary>Por que sai mais barato?</summary><p>Usamos milhas compradas a preço baixo e acompanhamos todos os dias as datas em que a companhia libera assentos com poucas milhas. Você paga em reais e não precisa ter milhas.</p></details><details><summary>As taxas de embarque estão incluídas?</summary><p>Sim. O preço que passamos já inclui as taxas, por pessoa.</p></details><details><summary>Quanto tempo demora a resposta?</summary><p>Respondemos no WhatsApp em poucas horas, com o preço e os voos.</p></details><details><summary>Posso remarcar ou cancelar?</summary><p>Depende da regra da companhia e do programa usado. Explicamos as condições antes de você fechar.</p></details><details><summary>O preço pode mudar?</summary><p>Pode: os assentos com milhas são limitados. Por isso a cotação tem validade e é confirmada na emissão.</p></details></section>
+<div class="final"><h2>Quer saber quanto fica a sua viagem?</h2>
+<div class="botoes"><a class="btn escuro" href="https://aerofarm.streamlit.app/pedido?origem=site">Pedir cotação</a>
+<a class="btn verde" href="https://aerofarm.streamlit.app/pedido?origem=site">Falar no WhatsApp</a></div></div>
+</main>
+<footer>Preços sujeitos à disponibilidade no momento da emissão. Aero Farm · passagens com milhas.</footer>
+</body>
+</html>
